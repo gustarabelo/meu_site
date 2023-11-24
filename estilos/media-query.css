@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+
+    header nav{
+        padding: 5px 15px;
+    }
+    #bot_menu{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    
+    #menu ul{
+        display: flex;
+        justify-content: start;
+    }
+
+    #menu ul > li{
+        padding: 0px 3px;
+        width: 100px;
+    }
+}
