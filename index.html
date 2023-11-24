@@ -3,126 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Login Meu Site</title>
+    <link rel="stylesheet" href="estilos/login_style.css">
+    <link rel="stylesheet" href="estilos/login_media-query.css">
 </head>
-<body onresize="mudouTamanho()">
-    <header>
-        <h1>Site de teste</h1>
-        <p>Esse site servirá apenas para praticar e usar todos os conhecimentos adquiridos</p>
-        <span id="bot_menu" class="material-symbols-outlined"  onclick="clickMenu()">menu</span>
-        <nav>
-            <menu class="menu" id="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Outro1</a></li>
-                    <li><a href="#">Outro2</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </menu>
-        </nav>
-    </header>
+<body>
     <main>
-        <section class="secao">
-            <h1>Conteudo 1</h1>
-            <h2>Sobre o conteudo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, libero vitae cumque autem consequatur exercitationem necessitatibus nobis quis illo corporis ducimus saepe odio perspiciatis nostrum excepturi cupiditate deserunt rem reprehenderit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quia reiciendis ratione! Sit architecto minus vel at voluptatem sed quasi officiis beatae, hic fuga facilis aspernatur quae similique, autem magni!</p>
-
-            <h3>Imagem bunita</h3>
-            <div class="div_mar">
-                <!-- <img class="mar" src="imagens/pexels-mack-kamp-1449455.jpg" alt="Back1"> -->
+        <section id="login">
+            <div id="img">
+                <!--Imagem-->
             </div>
-            
-
-            <h2>Mais Sobre</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis non quaerat praesentium ipsa odio assumenda aut veritatis alias corporis dignissimos. Fuga dolorum placeat optio illum voluptatibus consequatur quae, quis quod! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, explicabo, natus officia quo nostrum pariatur ab maxime eius asperiores officiis debitis perspiciatis optio ut accusantium nisi quam deserunt, tenetur error?</p>
-        </section>
-        <section class="secao">
-            <h1>Conteúdo 2</h1>
-            <h2>Mais sobre o conteudo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis illo rerum quas molestiae, quos praesentium fugit itaque repudiandae ullam? Quisquam ea repellat dolore enim veniam! Magnam corporis nulla tempore?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem hic distinctio dicta et, similique voluptatem exercitationem, vitae unde repellat sint quia maiores sit asperiores fugit minima ratione tempore, nesciunt libero?</p>
-
-            <div>
-                <h3>Setups que eu queria</h3>
-                <div class="cont_setup">
-                    <img class="setup" src="imagens/setup1.jpg" alt="setup1">
-                    <img class="setup" src="imagens/setup2.jpg" alt="setup2">
-                </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem vindo ao meu site. Digite qualquer coisa com um "@" no email, e uma senha entre 8 e 16 digitos.</p>
+                <form action="index.html" method="get" autocomplete="on">
+                    <div class="campo">
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" placeholder="Seu e-mail" required autocomplete="email">
+                    </div>
+                    <div class="campo">
+                        <label for="isenha">Senha:</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" required autocomplete="current-password" minlength="8" maxlength="16">
+                    </div>
+                        <input type="submit" value="Entrar">
+                        <a href="#" class="botao">Esqueci a senha</a>
+                </form>
             </div>
         </section>
-        <article>
-            <h2>Abobrinhas</h2>
-            <p>Meus games favoritos</p>
-            <div>
-                <ul class="lista">
-                    <li>God of War</li>
-                    <ul>
-                        <li>GOW 1</li>
-                        <li>GOW 2</li>
-                        <li>GOW 3</li>
-                        <li>GOW 2018</li>
-                    </ul>
-                    <li>Grand Thef Auto</li>
-                    <ul>
-                        <li>GTA San Andreas</li>
-                        <li>GTA V</li>
-                    </ul>
-                    <li>Pokemon</li>
-                    <ul>
-                        <li>FireRed</li>
-                        <li>Platinum</li>
-                        <li>HeartGold</li>
-                        <li>White</li>
-                        <li>White2</li>
-                        <li>X</li>
-                        <li>Omega Ruby</li>
-                        <li>Lets'Go Pikachu</li>
-                        <li>Legends Arceus</li>
-                    </ul>
-                    <li>The Last Of Us</li>
-                    <li>Dragon Ball</li>
-                    <ul>
-                        <li>BT 3</li>
-                        <li>Xenoverse 1 e 2</li>
-                        <li>Kakarot</li>
-                    </ul>
-                    <li>The Sims 4</li>
-                </ul>
-            </div>
-            <h3>Meu time</h3>
-            <div class="time">
-                <img src="imagens/infernape.png" alt="">
-                <img src="imagens/electivire.png" alt="">
-                <img src="imagens/vaporeon.png" alt="">
-                <img src="imagens/charizard.png" alt="">
-                <img src="imagens/sceptile.png" alt="">
-                <img src="imagens/darkrai.png" alt="">
-            </div>
-        </article>
     </main>
-    <footer>
-        <p>Site criado por Duppis <a href="https://www.instagram.com/gustarabelo0"><strong>@gustarabelo0</strong></a></p>
-    </footer>
-
-    <script>
-
-        function mudouTamanho(){
-            if(window.innerWidth >= 768)
-                menu.style.display = 'block'
-            else
-                menu.style.display = 'none'
-        }
-
-        function clickMenu(){
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none';
-            } else{
-                menu.style.display = 'block';
-            }
-        }
-    </script>
 </body>
 </html>
